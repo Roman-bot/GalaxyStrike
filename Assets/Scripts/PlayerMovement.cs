@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float currentRotation = angleRotation * direction.x;
         float currentRotationUp = angleRotation * direction.y;
-        Debug.Log("Rotation " + currentRotation);
+        //Debug.Log("Rotation " + currentRotation);
         //Debug.Log("Direction " + direction.x);
         Quaternion targetRotaton = Quaternion.Euler(currentRotationUp, 0, currentRotation);
         transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotaton, Time.deltaTime*2);
